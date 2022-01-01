@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "env-cmd -f ./config/dev.env nodemon --config nodemon.json src/app.ts",
-    "build": "echo Hello World",
-    "start": "ts-node src/app.ts"
+    "build": "npx tsc --build",
+    "start": "node dist/app.js"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
